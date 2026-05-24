@@ -1,0 +1,50 @@
+// Primary Colors
+$primary-color: #39CDCC;
+$primary-dark: #213F7D;
+$primary-light: #545F7D;
+
+// Text Colors
+$text-dark: #213F7D;
+$text-light: #545F7D;
+$text-gray: #8991A5;
+
+// Border Colors
+$border-color: rgba(84, 95, 125, 0.15);
+$border-light: #E5E5E5;
+
+// Background Colors
+$background-light: #F9F9F9;
+$background-white: #FFFFFF;
+$white: #FFFFFF;
+
+// Status Colors
+$success: #39CD99;
+$warning: #E9B200;
+$danger: #E4033B;
+$inactive: #545F7D;
+$pending: #E9B200;
+$active: #39CD99;
+$blacklisted: #E4033B;
+
+// Spacing
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$spacing-xxl: 48px;
+
+// Border Radius
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+
+// Breakpoints
+$mobile: 576px;
+$tablet: 768px;
+$desktop: 1024px;
+$large-desktop: 1200px;
+
+// Shadows
+$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.1);

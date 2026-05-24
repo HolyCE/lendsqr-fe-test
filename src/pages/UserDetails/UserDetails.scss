@@ -1,0 +1,209 @@
+@import '../../styles/variables';
+
+.user-details {
+  padding: 20px;
+
+  .back-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    color: $text-light;
+    cursor: pointer;
+    margin-bottom: 24px;
+    font-size: 14px;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .page-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: $text-dark;
+    margin-bottom: 24px;
+  }
+
+  .profile-section {
+    background: white;
+    border-radius: 8px;
+    box-shadow: $shadow-sm;
+    overflow: hidden;
+
+    .profile-header {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      padding: 32px;
+      border-bottom: 1px solid $border-color;
+      flex-wrap: wrap;
+
+      .profile-info {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .avatar {
+          width: 80px;
+          height: 80px;
+          background: #39CDCC;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 32px;
+          font-weight: 600;
+          color: white;
+        }
+
+        .info {
+          h2 {
+            font-size: 20px;
+            font-weight: 500;
+            color: $text-dark;
+            margin-bottom: 4px;
+          }
+
+          p {
+            color: $text-gray;
+            font-size: 14px;
+          }
+        }
+      }
+
+      .user-tier {
+        text-align: center;
+
+        span {
+          font-size: 12px;
+          color: $text-gray;
+        }
+
+        .stars {
+          display: flex;
+          gap: 4px;
+          margin-top: 8px;
+
+          .star {
+            color: #E9B200;
+            font-size: 16px;
+
+            &.filled {
+              fill: #E9B200;
+            }
+          }
+        }
+      }
+
+      .account-info {
+        text-align: right;
+
+        h3 {
+          font-size: 20px;
+          font-weight: 600;
+          color: $text-dark;
+        }
+
+        p {
+          font-size: 12px;
+          color: $text-gray;
+        }
+      }
+    }
+
+    .tabs {
+      display: flex;
+      gap: 0;
+      border-bottom: 1px solid $border-color;
+      overflow-x: auto;
+
+      button {
+        padding: 16px 24px;
+        background: none;
+        border: none;
+        color: $text-gray;
+        font-size: 14px;
+        cursor: pointer;
+        white-space: nowrap;
+        transition: all 0.2s;
+
+        &:hover {
+          color: $primary-color;
+        }
+
+        &.active {
+          color: $primary-color;
+          border-bottom: 2px solid $primary-color;
+        }
+      }
+    }
+
+    .tab-content {
+      padding: 32px;
+
+      .info-grid {
+        .info-row {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 24px;
+          margin-bottom: 32px;
+
+          @media (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+          }
+
+          .info-item {
+            label {
+              display: block;
+              font-size: 12px;
+              color: $text-gray;
+              margin-bottom: 8px;
+            }
+
+            p {
+              font-size: 14px;
+              font-weight: 500;
+              color: $text-dark;
+            }
+          }
+        }
+      }
+
+      .info-section {
+        margin-bottom: 32px;
+
+        h3 {
+          font-size: 16px;
+          font-weight: 600;
+          color: $text-dark;
+          margin-bottom: 24px;
+          padding-bottom: 8px;
+          border-bottom: 1px solid $border-color;
+        }
+      }
+
+      .tab-placeholder {
+        text-align: center;
+        padding: 48px;
+        color: $text-gray;
+      }
+    }
+  }
+
+  .loading-container, .error-container {
+    text-align: center;
+    padding: 48px;
+
+    button {
+      margin-top: 16px;
+      padding: 8px 24px;
+      background: $primary-color;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,202 @@
+@import '../../styles/variables';
+
+.login-container {
+  display: flex;
+  min-height: 100vh;
+  
+  .login-left {
+    flex: 1;
+    background: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 80px;
+    position: relative;
+    
+    @media (max-width: 1024px) {
+      display: none;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 100px;
+      
+      .logo-icon {
+        width: 28px;
+        height: 28px;
+      }
+      
+      span {
+        font-size: 28px;
+        font-weight: 700;
+        color: #213F7D;
+        line-height: 1;
+      }
+    }
+    
+    .illustration {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+  
+  .login-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background: #FFFFFF;
+    
+    .login-form-wrapper {
+      max-width: 447px;
+      width: 100%;
+      
+      .logo-mobile {
+        display: none;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 40px;
+        
+        @media (max-width: 1024px) {
+          display: flex;
+        }
+        
+        .logo-icon {
+          width: 24px;
+          height: 24px;
+        }
+        
+        span {
+          font-size: 24px;
+          font-weight: 700;
+          color: #213F7D;
+          line-height: 1;
+        }
+      }
+      
+      h1 {
+        font-size: 40px;
+        font-weight: 700;
+        color: #213F7D;
+        margin-bottom: 12px;
+        letter-spacing: -0.5px;
+      }
+      
+      p {
+        font-size: 16px;
+        color: #545F7D;
+        margin-bottom: 48px;
+      }
+      
+      .error-message {
+        color: #E4033B;
+        font-size: 12px;
+        margin-bottom: 16px;
+        padding: 8px;
+        background: rgba(228, 3, 59, 0.1);
+        border-radius: 4px;
+      }
+      
+      form {
+        .input-group {
+          margin-bottom: 24px;
+          
+          input {
+            width: 100%;
+            padding: 16px;
+            border: 2px solid rgba(84, 95, 125, 0.15);
+            border-radius: 5px;
+            font-size: 14px;
+            color: #000000;
+            background: #FFFFFF;
+            
+            &:-webkit-autofill,
+            &:-webkit-autofill:hover,
+            &:-webkit-autofill:focus,
+            &:-webkit-autofill:active {
+              -webkit-box-shadow: 0 0 0 30px #FFFFFF inset !important;
+              -webkit-text-fill-color: #000000 !important;
+              caret-color: #000000 !important;
+            }
+            
+            &::placeholder {
+              color: #8991A5;
+              opacity: 0.7;
+            }
+            
+            &:focus {
+              outline: none;
+              border-color: #39CDCC;
+            }
+          }
+        }
+        
+        .password-group {
+          position: relative;
+          
+          input {
+            padding-right: 80px;
+          }
+          
+          .show-hide-btn {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #39CDCC;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            background: none;
+            border: none;
+            letter-spacing: 1px;
+          }
+        }
+        
+        .forgot-password {
+          display: block;
+          text-align: left;
+          color: #39CDCC;
+          font-size: 12px;
+          font-weight: 600;
+          margin-bottom: 40px;
+          text-decoration: none;
+          letter-spacing: 0.5px;
+        }
+        
+        .login-btn {
+          width: 100%;
+          padding: 16px;
+          background: #39CDCC;
+          color: #FFFFFF;
+          border: none;
+          border-radius: 8px;
+          font-size: 14px;
+          font-weight: 600;
+          cursor: pointer;
+          transition: opacity 0.3s;
+          
+          &:hover {
+            opacity: 0.9;
+          }
+        }
+      }
+    }
+  }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}

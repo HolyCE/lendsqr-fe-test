@@ -1,0 +1,39 @@
+.layout {
+  min-height: 100vh;
+  background: #F9F9F9;
+  
+  .layout-body {
+    display: flex;
+    position: relative;
+  }
+  
+  .layout-content {
+    flex: 1;
+    padding: 32px;
+    overflow-x: auto;
+    transition: margin-left 0.3s ease;
+  }
+  
+  .mobile-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: none;
+    
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .layout {
+    .layout-content {
+      padding: 16px;
+    }
+  }
+}
