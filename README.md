@@ -6,6 +6,9 @@
 ## GitHub Repository
 [https://github.com/HolyCE/lendsqr-fe-test](https://github.com/HolyCE/lendsqr-fe-test)
 
+## Video Walkthrough
+[https://www.loom.com/share/6dacd246e67c4769a785847ae730e914](https://www.loom.com/share/6dacd246e67c4769a785847ae730e914)
+
 ## Project Overview
 This is a frontend web application built for the Lendsqr Frontend Engineering Assessment. It is a complete admin dashboard for managing users, displaying statistics, and viewing detailed user information. The application includes authentication (login page), dashboard with dynamic statistics, users table with 500 mock users, search, filter, pagination, user details page with data persistence using localStorage, and fully responsive design for mobile and desktop.
 
