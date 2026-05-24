@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Login.scss';
 
+// Import images - static import method
+import unionLogo from '../../assets/images/Union.png?url';
+import pabloSignIn from '../../assets/images/pablo-sign-in 1.svg?url';
+
 const Login: React.FC = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
@@ -25,18 +29,18 @@ const Login: React.FC = () => {
     <div className="login-container">
       <div className="login-left">
         <div className="logo">
-          <img src="/src/assets/images/Union.png" alt="Logo" className="logo-icon" />
+          <img src={unionLogo} alt="Logo" className="logo-icon" />
           <span>lendsqr</span>
         </div>
         <div className="illustration">
-          <img src="/src/assets/images/pablo-sign-in 1.svg" alt="Sign in illustration" />
+          <img src={pabloSignIn} alt="Sign in illustration" />
         </div>
       </div>
       
       <div className="login-right">
         <div className="login-form-wrapper">
           <div className="logo-mobile">
-            <img src="/src/assets/images/Union.png" alt="Logo" className="logo-icon" />
+            <img src={unionLogo} alt="Logo" className="logo-icon" />
             <span>lendsqr</span>
           </div>
           <h1>Welcome!</h1>

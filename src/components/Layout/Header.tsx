@@ -3,6 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import { FiBell, FiUser, FiChevronDown, FiMenu, FiSearch } from 'react-icons/fi';
 import './Header.scss';
 
+// Import logo image
+import unionLogo from '../../assets/images/Union.png?url';
+
 interface HeaderProps {
   onMenuClick?: () => void;
 }
@@ -23,7 +26,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
           <FiMenu />
         </button>
         <div className="logo">
-          <img src="/src/assets/images/Union.png" alt="Logo" className="logo-icon" />
+          <img src={unionLogo} alt="Logo" className="logo-icon" />
           <span>lendsqr</span>
         </div>
       </div>
